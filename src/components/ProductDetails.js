@@ -3,8 +3,6 @@ import { products } from '../data/products';
 
 const ProductDetails = () => {
   const { productId } = useParams();
-  
-  // Pronađi proizvod u nizu proizvoda
   const product = products.find(p => p.id === parseInt(productId));
   
   if (!product) {
@@ -17,7 +15,6 @@ const ProductDetails = () => {
       <img src={product.imageUrl} alt={product.title} />
       <p className="description">{product.description}</p>
       <p className="price">Cijena: {product.price} KM</p>
-      {/* Dodatni detalji proizvoda */}
     </div>
   );
 };

@@ -31,13 +31,11 @@ const Home = () => {
       <section className="popular-products">
         <h2>Popularni proizvodi</h2>
         <div className="products-preview">
-          {/* You could add a preview of 3-4 popular products here */}
           <Link to="/products/1" className="product-preview">
             <img src="https://placehold.co/300x200?text=Pametni+telefon" alt="Pametni telefon" />
             <h4>Pametni telefon</h4>
             <p>799.99 KM</p>
           </Link>
-          {/* Add more preview items as needed */}
         </div>
       </section>
     </div>
